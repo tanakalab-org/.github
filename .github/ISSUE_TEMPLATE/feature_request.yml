@@ -1,0 +1,33 @@
+name: ✨ 機能要望
+description: 新しいアイデアや改善案を提案します
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        新しいアイデアを歓迎します！その機能によって何が解決されるかを教えてください。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 解決したい問題
+      description: 現在、どのような不便や困りごとがありますか？
+      placeholder: 例：データの書き出しに時間がかかりすぎるため、一括ダウンロード機能が欲しい
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 提案する解決策
+      description: どのような機能を追加してほしいですか？具体的なイメージがあれば教えてください。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 検討した代替案
+      description: 現在の機能で代用しようとした方法はありますか？
+  - type: textarea
+    id: context
+    attributes:
+      label: その他
+      description: スクリーンショットや参考にした他サービスのURLなどがあれば、ここに記載してください。
