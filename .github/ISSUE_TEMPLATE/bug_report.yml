@@ -1,0 +1,56 @@
+name: 🐛 バグ報告
+description: 動作の不具合やエラーを報告します
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグの報告ありがとうございます！修正のために詳細な情報を提供してください。
+  - type: textarea
+    id: description
+    attributes:
+      label: 問題の概要
+      description: どのような問題が発生していますか？
+      placeholder: 例：ログインボタンを押しても反応しない
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 再現手順
+      description: 問題を再現するための手順を詳しく書いてください。
+      placeholder: |
+        1. '...' を開く
+        2. '...' を入力する
+        3. '...' をクリックする
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 期待される挙動
+      placeholder: 本来であればどのように動くべきでしたか？
+  - type: dropdown
+    id: browser
+    attributes:
+      label: 発生したブラウザ
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - その他
+  - type: input
+    id: version
+    attributes:
+      label: アプリのバージョン
+      placeholder: v1.2.3
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 事前確認
+      options:
+        - label: 最新バージョンで問題が再現することを確認しました
+          required: true
+        - label: 似たようなIssueがすでに報告されていないか確認しました
+          required: true
