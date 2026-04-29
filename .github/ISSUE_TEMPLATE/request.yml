@@ -1,0 +1,16 @@
+name: ⚙️ 運営・事務連絡
+description: 備品購入、イベント企画、事務手続きなど
+labels: ["admin", "todo"]
+body:
+  - type: input
+    id: subject
+    attributes:
+      label: 件名
+      placeholder: 例：マウスの購入依頼
+  - type: textarea
+    id: details
+    attributes:
+      label: 内容詳細
+      description: 理由や期限などを記入してください
+    validations:
+      required: true
