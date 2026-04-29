@@ -1,0 +1,22 @@
+name: 📈 進捗報告
+description: 週次の活動報告と次週の計画
+labels: ["weekly-report"]
+body:
+  - type: textarea
+    id: progress
+    attributes:
+      label: 今週やったこと
+      placeholder: 文献調査、実験、コード実装など
+    validations:
+      required: true
+  - type: textarea
+    id: problems
+    attributes:
+      label: 詰まっていること・相談
+      placeholder: エラーが解決しない、理論が分からない等
+  - type: textarea
+    id: next-step
+    attributes:
+      label: 来週の予定
+    validations:
+      required: true
